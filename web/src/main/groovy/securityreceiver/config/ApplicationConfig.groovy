@@ -9,12 +9,12 @@ import securityreceiver.services.config.ServicesConfig;
 
 @Configuration
 @Import(ServicesConfig.class)
-@PropertySource("classpath:securityreceiver/internal.application.properties")
-public class ApplicationConfig {
+@PropertySource('classpath:securityreceiver/internal.application.properties')
+class ApplicationConfig {
 
     @Bean
-    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
-        return new PropertySourcesPlaceholderConfigurer();
+    static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
+        return new PropertySourcesPlaceholderConfigurer()
     }
 
     // Application-scoped beans go here...

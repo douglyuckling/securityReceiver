@@ -3,7 +3,7 @@ Ext.application({
     name: 'SR', // Initialism for "security receiver"
 
     controllers: [
-        'GroceryList'
+        'Snapshots'
     ],
 
     appFolder: 'app',
@@ -13,9 +13,9 @@ Ext.application({
             layout: 'fit',
             items: [
                 {
-                    xtype: 'grocerylist',
-                    title: 'Grocery List',
-                    store: this.getGroceryListController().getGroceryListStore()
+                    xtype: 'snapshotslist',
+                    title: 'Snapshots',
+                    store: this.getSnapshotsController().getSnapshotsStore()
                 }
             ]
         });

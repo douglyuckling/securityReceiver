@@ -6,7 +6,7 @@ allprojects {
         mavenCentral()
     }
 
-    apply plugin: 'java'
+    apply plugin: 'groovy'
     sourceCompatibility = 1.7
     targetCompatibility = 1.7
 }
@@ -15,6 +15,7 @@ ext.springVersion = '3.2.3.RELEASE'
 
 subprojects {
     dependencies {
+        compile 'org.codehaus.groovy:groovy-all:2.1.6'
         compile "org.springframework:spring-beans:${springVersion}"
         compile "org.springframework:spring-context:${springVersion}"
     }

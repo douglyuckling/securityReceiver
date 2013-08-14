@@ -4,16 +4,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import securityreceiver.domain.config.DomainConfig;
-import securityreceiver.services.GroceryListService;
-import securityreceiver.services.GroceryListServiceImpl;
+import securityreceiver.services.SnapshotService;
+import securityreceiver.services.SnapshotServiceImpl;
 
 @Configuration
 @Import(DomainConfig.class)
-public class ServicesConfig {
+class ServicesConfig {
 
     @Bean
-    public GroceryListService groceryListService() {
-        return new GroceryListServiceImpl();
+    SnapshotService snapshotService() {
+        return new SnapshotServiceImpl()
     }
 
 }
