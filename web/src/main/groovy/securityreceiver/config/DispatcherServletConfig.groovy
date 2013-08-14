@@ -1,4 +1,6 @@
 package securityreceiver.config
+
+import org.codehaus.jackson.JsonParser
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
@@ -30,7 +32,10 @@ class DispatcherServletConfig extends WebMvcConfigurationSupport {
 
     @Override
     protected void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        converters.add(new MappingJacksonHttpMessageConverter())
+        def jacksonConverter = new MappingJacksonHttpMessageConverter()
+        jacksonConverter.objectMapper.configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
+        jacksonConverter.objectMapper.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
+        converters.add(jacksonConverter)
         super.configureMessageConverters(converters)
     }
 

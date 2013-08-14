@@ -20,7 +20,6 @@ class InputController {
     @RequestMapping(value = '/update', method = POST)
     @ResponseBody
     void handleUpdate(@RequestBody Snapshot snapshot) {
-        println snapshot.dump() // REVERT
         snapshotService.save(snapshot)
     }
 
