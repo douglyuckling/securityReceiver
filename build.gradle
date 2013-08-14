@@ -21,6 +21,13 @@ subprojects {
     }
 }
 
+project(':domain') {
+    dependencies {
+        compile 'org.mongodb:mongo-java-driver:2.10.1'
+        compile 'org.springframework.data:spring-data-mongodb:1.1.1.RELEASE'
+    }
+}
+
 project(':services') {
     dependencies {
         compile project(':domain')
