@@ -1,4 +1,4 @@
-package prefabapp.domain;
+package securityreceiver.domain;
 
 import java.util.UUID;
 

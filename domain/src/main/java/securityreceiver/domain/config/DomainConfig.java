@@ -1,9 +1,9 @@
-package prefabapp.domain.config;
+package securityreceiver.domain.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import prefabapp.domain.repository.DummyGroceryListItemRepositoryImpl;
-import prefabapp.domain.repository.GroceryListItemRepository;
+import securityreceiver.domain.repository.DummyGroceryListItemRepositoryImpl;
+import securityreceiver.domain.repository.GroceryListItemRepository;
 
 @Configuration
 public class DomainConfig {

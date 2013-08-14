@@ -1,15 +1,15 @@
-package prefabapp.config;
+package securityreceiver.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
-import prefabapp.services.config.ServicesConfig;
+import securityreceiver.services.config.ServicesConfig;
 
 @Configuration
 @Import(ServicesConfig.class)
-@PropertySource("classpath:prefabapp/internal.application.properties")
+@PropertySource("classpath:securityreceiver/internal.application.properties")
 public class ApplicationConfig {
 
     @Bean

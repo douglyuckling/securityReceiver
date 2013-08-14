@@ -1,2 +1,2 @@
-rootProject.name='prefabApp'
+rootProject.name='securityReceiver'
 include 'domain', 'services', 'web'

@@ -1,4 +1,4 @@
-Ext.define('PA.view.GroceryListPanel' ,{
+Ext.define('SR.view.GroceryListPanel' ,{
     extend: 'Ext.grid.Panel',
     uses: ['Ext.grid.plugin.RowEditing'],
     alias: 'widget.grocerylist',

@@ -1,7 +1,7 @@
-package prefabapp.domain.repository;
+package securityreceiver.domain.repository;
 
 import org.springframework.util.StringUtils;
-import prefabapp.domain.GroceryListItem;
+import securityreceiver.domain.GroceryListItem;
 
 import java.util.ArrayList;
 import java.util.Collection;

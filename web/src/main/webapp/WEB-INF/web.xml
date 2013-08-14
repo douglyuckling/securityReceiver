@@ -4,7 +4,7 @@
          xmlns="http://java.sun.com/xml/ns/j2ee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
-         http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+         http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd">
 
     <context-param>
         <param-name>contextClass</param-name>
@@ -13,7 +13,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>prefabapp.config.ApplicationConfig</param-value>
+        <param-value>securityreceiver.config.ApplicationConfig</param-value>
     </context-param>
 
     <listener>
@@ -29,7 +29,7 @@
         </init-param>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>prefabapp.config.DispatcherServletConfig</param-value>
+            <param-value>securityreceiver.config.DispatcherServletConfig</param-value>
         </init-param>
     </servlet>
 

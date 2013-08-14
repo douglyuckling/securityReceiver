@@ -1,8 +1,8 @@
-package prefabapp.services;
+package securityreceiver.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import prefabapp.domain.GroceryListItem;
-import prefabapp.domain.repository.GroceryListItemRepository;
+import securityreceiver.domain.GroceryListItem;
+import securityreceiver.domain.repository.GroceryListItemRepository;
 
 import java.util.Collection;
 

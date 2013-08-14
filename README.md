@@ -1,4 +1,4 @@
-PrefabApp
-=========
+SecurityReceiver
+================
 
-A template project for a Java-based web application using the Spring Framework
+A project to receive periodic updates containing security-related information (POSTed from the Tasker App for Android).

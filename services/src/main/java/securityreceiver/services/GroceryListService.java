@@ -1,6 +1,6 @@
-package prefabapp.services;
+package securityreceiver.services;
 
-import prefabapp.domain.GroceryListItem;
+import securityreceiver.domain.GroceryListItem;
 
 import java.util.Collection;
 
